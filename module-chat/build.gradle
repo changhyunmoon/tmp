@@ -1,0 +1,28 @@
+plugins {
+    id 'java-library'
+}
+
+group = 'com.team6'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // spring bean 사용하려면 필요
+    implementation 'org.springframework.boot:spring-boot-starter'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
