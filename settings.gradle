@@ -2,6 +2,7 @@ rootProject.name = 'backend'
 
 include 'api-server'
 include 'module-chat'
+include 'module-guide'
 include 'module-member'
 include 'module-matching'
 include 'module-ai'
